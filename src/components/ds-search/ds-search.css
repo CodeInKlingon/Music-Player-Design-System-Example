@@ -1,0 +1,38 @@
+
+:host .root{
+	position: relative;
+	display: inline-block;
+	margin: 20px;
+}
+
+ds-textbox{
+	z-index: 2;
+	margin-top: 0px;
+}
+
+.search-results{
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	right: -10px;
+	padding-top : 60px;
+	padding-left : 15px;
+	padding-right : 15px;
+	padding-bottom : 10px;
+	background-color: white;
+	border: thin solid #f1f1f1;;
+	border-radius: 14px;
+	z-index: 1;
+	transition: all 0.5s;
+	height: auto;
+	box-shadow: 0px 8px var(--ds-roundness) var(--ds-shadow-base);
+
+}
+
+
+
+.no-results{
+	opacity: 0;
+	padding-top : 0px;
+	height: 0%;
+}

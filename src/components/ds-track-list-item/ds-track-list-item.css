@@ -1,0 +1,38 @@
+div.track {
+	/* padding: 20px; */
+	/* border-radius: var(--ds-roundness-md); */
+	/* box-shadow: 0px 8px var(--ds-roundness) var(--ds-shadow-base); */
+	/* display: inline-block; */
+	margin: 15px 0px;
+	/* color: var(--ds-dark-2); */
+	/* background-color: var(--ds-light-base); */
+
+	display: flex;
+	cursor: pointer;
+}
+
+div.track:hover, div.track:focus{
+	text-decoration: underline;
+	background-color: #f1f1f1;
+}
+
+.preview{
+	flex-basis: 1;
+	width: 40px;
+	height: 40px;
+	padding: 4px
+}
+.text{
+	flex-basis: 1;
+	padding: 5px;
+}
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	background: url(https://blog.teamtreehouse.com/wp-content/uploads/2015/05/loading.gif) 50% no-repeat;
+}
+
+.text span{
+	display: block;
+}

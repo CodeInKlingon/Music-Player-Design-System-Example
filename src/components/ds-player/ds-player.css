@@ -1,0 +1,173 @@
+.player {
+	padding: 20px;
+	border-radius: var(--ds-roundness-md);
+	box-shadow: 0px 8px var(--ds-roundness) var(--ds-shadow-base);
+	display: flex;
+	margin: 10px;
+	color: var(--ds-dark-2);
+	background-color: var(--ds-light-base);
+
+}
+
+.track{
+	display: flex;
+	width: 50%;
+}
+.controls{
+	width: 50%;
+
+}
+.buttons{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	height: 75px;
+}
+
+.seek{
+	width: 100%;
+}
+
+input[type=range]{
+	width: 100%;
+}
+
+.preview{
+	flex-basis: 1;
+	width: 40px;
+	height: 40px;
+	padding: 4px
+}
+.text{
+	flex-basis: 1;
+	padding: 5px;
+}
+img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	background: url(https://blog.teamtreehouse.com/wp-content/uploads/2015/05/loading.gif) 50% no-repeat;
+}
+
+.text span{
+	display: block;
+}
+
+
+.text span.none{
+	background: rgb(207, 207, 207);
+	content: " ";
+	width: 30px;
+	height: 1em;
+	margin-top: 2px;
+}
+
+.text span.title.none{
+	width: 55px;
+}
+
+.buttons button:hover, .buttons button:focus {
+	background-color: var(--color-p-2);
+	border-color: var(--color-p-3);
+	color: white;
+}
+
+.buttons button{
+	margin: 10px;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	border: solid thin #e0e0e0;
+	color: var(--color-p);
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+}
+
+button.play::after{
+	content: "\f04b";
+}
+
+button.prev::after{
+	content: "\f048";
+}
+
+button.next::after{
+	content: "\f051";
+}
+
+button.play{
+	transform: scale(1.25);
+	border-color: var(--color-p);
+}
+
+.range{
+	position: relative;
+	width: calc(100% - 20px);
+}
+
+.bar{
+	position: absolute;
+	height: 10px;
+	width: calc(100% + 20px);
+	border-radius: 3px;
+	background-color: rgb(245, 245, 245);
+	border: solid thin rgb(207, 207, 207);
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.progress{
+	background-color: var(--color-p-2);
+	position: absolute;
+	left: 0px;
+	border-radius: 3px;
+	/* right: calc(50% - 10px); */
+	height: 10px;
+	animation-name: progressBar;
+	animation-play-state: paused;
+	animation-duration: 120s;
+	animation-timing-function: linear;
+	animation-delay: -60s; /*40% of 0.6s */
+	pointer-events: none;
+}
+
+.handle{
+	position: absolute;
+	/* left: 50%; */
+	width: 20px;
+	height: 10px;
+	border-radius: 3px;
+	background-color: var(--color-p); 
+	animation-name: handlebar;
+	animation-play-state: paused;
+	animation-duration: 120s;
+	animation-timing-function: linear;
+	animation-delay: -60s; /*40% of 0.6s */
+	pointer-events: none;
+}
+
+@keyframes progressBar {
+    0% {
+		width: 10px;
+    }
+    
+    100% {
+		width: calc(100% + 15px);
+    }
+}
+
+@keyframes handlebar {
+    0% {
+		
+		left:0%;
+    }
+    
+    100% {
+		left: calc(100%);
+    }
+}

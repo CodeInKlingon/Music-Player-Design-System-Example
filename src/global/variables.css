@@ -1,0 +1,91 @@
+/** 
+Presenter types:
+    Animation
+    BorderRadius
+    Border
+    Color
+    Easing
+    FontFamily
+    FontSize
+    FontWeight
+    LineHeight
+    Opacity
+    Shadow
+    Spacing
+    Svg
+*/
+
+/**
+ * @tokens Colors
+ * @presenter Color
+ */
+:root{
+	--color-p: 	#0a75e1;
+	--color-p-2:#009ff6;
+	--color-p-3:#00c1e1;
+	--color-s-2:#00dbb4;
+	--color-s:  #88ef85;
+	--color-t:  #f9f871;
+}
+
+/**
+ * @tokens Font Size
+ * @presenter FontSize
+ */
+ :root{
+	--font-size-xs: 	0.7em;
+	--font-size-s: 		1em;
+	--font-size-base: 	1.3em;
+	--font-size-m: 		2.5em;
+	--font-size-l: 		3.8em;
+	--font-size-xl: 	5em;
+}
+
+
+:root {
+
+	/* gloabl styles */
+	font-family: 'Barlow', sans-serif;
+	
+	--ds-shadow-base: rgba(218,224,235,.6);
+
+	/* variables */
+	--ds-primary-color: #488aff;
+	--ds-roundness: 20px;
+	--ds-roundness-md: .25rem;
+	--ds-roundness-sm: 2px;
+
+	--ds-dark-base: rgb(0,0,0);
+	--ds-dark-1: rgb(32, 32, 32);
+	--ds-dark-2: rgb(46, 46, 46);
+	--ds-dark-3: rgb(105, 105, 105);
+	--ds-dark-4: rgb(167, 167, 167);
+
+
+	--ds-light-base: rgb(255, 255, 255);
+	--ds-light-1: rgb(250, 250, 250);
+	--ds-light-2: rgb(231, 231, 231);
+	--ds-light-3: rgb(167, 167, 167);
+	--ds-light-4: rgb(126, 126, 126);
+
+
+	--ds-brand-base: rgb(191, 141, 44);
+	--ds-brand-1: rgb(117, 82, 10);
+	--ds-brand-2: rgb(156, 111, 21);
+	--ds-brand-3: rgb(206, 160, 69);
+	--ds-brand-4: rgb(240, 196, 110);
+
+	--ds-secondary-base: rgb(80, 114, 53);
+	--ds-secondary-1: rgb(2, 85, 16);
+	--ds-secondary-2: rgb(3, 129, 24);
+	--ds-secondary-3: rgb(37, 192, 63);
+	--ds-secondary-4: rgb(85, 219, 107);
+
+	--ds-success-base: rgb(3, 170, 31);
+	--ds-warning-base: rgb(243, 40, 40);
+
+}
+
+body{
+	background-color: #fafafa;
+}
